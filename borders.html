@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Borders</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-4 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Bootstrap 5 Border Examples</h2>
+
+      <div class="row g-4">
+        <!-- Border All Sides -->
+        <div class="col-md-4">
+          <div class="border p-3 rounded bg-white">
+            <h5>All Borders</h5>
+            <p class="mb-0">This box has borders on all sides.</p>
+          </div>
+        </div>
+
+        <!-- Border Primary Color -->
+        <div class="col-md-4">
+          <div class="border border-primary p-3 rounded bg-white">
+            <h5>Primary Border</h5>
+            <p class="mb-0">Primary colored border.</p>
+          </div>
+        </div>
+
+        <!-- Border Dashed (custom dashed style) -->
+        <div class="col-md-4">
+          <div class="border p-3 rounded bg-white" style="border-style: dashed">
+            <h5>Dashed Border</h5>
+            <p class="mb-0">Styled dashed border using custom style.</p>
+          </div>
+        </div>
+
+        <!-- Border Start and End only -->
+        <div class="col-md-4">
+          <div
+            class="border-start border-end border-3 border-success p-3 rounded bg-white"
+          >
+            <h5>Start & End Border</h5>
+            <p class="mb-0">Only left and right sides have a border.</p>
+          </div>
+        </div>
+
+        <!-- Border with Shadow -->
+        <div class="col-md-4">
+          <div class="border border-dark shadow-sm p-3 rounded bg-white">
+            <h5>Border with Shadow</h5>
+            <p class="mb-0">Border and subtle shadow.</p>
+          </div>
+        </div>
+
+        <!-- Border Radius -->
+        <div class="col-md-4">
+          <div class="border border-info rounded-pill p-3 bg-white">
+            <h5>Pill Border</h5>
+            <p class="mb-0">
+              Pill-shaped border using <code>rounded-pill</code>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
