@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap List Groups</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light p-4">
+    <div class="container">
+      <h2 class="mb-4">Bootstrap 5 List Groups</h2>
+
+      <!-- Basic List Group -->
+      <div class="mb-4">
+        <h5>Basic List Group</h5>
+        <ul class="list-group w-50">
+          <li class="list-group-item">First item</li>
+          <li class="list-group-item">Second item</li>
+          <li class="list-group-item">Third item</li>
+        </ul>
+      </div>
+
+      <!-- Active and Disabled Items -->
+      <div class="mb-4">
+        <h5>Active and Disabled Items</h5>
+        <ul class="list-group w-50">
+          <li class="list-group-item active">Active item</li>
+          <li class="list-group-item">Normal item</li>
+          <li class="list-group-item disabled">Disabled item</li>
+        </ul>
+      </div>
+
+      <!-- List Group with Links -->
+      <div class="mb-4">
+        <h5>List Group with Links</h5>
+        <div class="list-group w-50">
+          <a href="#" class="list-group-item list-group-item-action active"
+            >Home</a
+          >
+          <a href="#" class="list-group-item list-group-item-action">Profile</a>
+          <a href="#" class="list-group-item list-group-item-action"
+            >Messages</a
+          >
+        </div>
+      </div>
+
+      <!-- List Group with Badges -->
+      <div class="mb-4">
+        <h5>List Group with Badges</h5>
+        <ul class="list-group w-50">
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            Notifications
+            <span class="badge bg-primary rounded-pill">4</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            Messages
+            <span class="badge bg-success rounded-pill">7</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
