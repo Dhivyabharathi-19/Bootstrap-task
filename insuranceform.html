@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insurance Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="container mt-5">
+      <h1 class="text-center fw-bold mb-4">Insurance Form</h1>
+
+      <div
+        class="bg-white p-4 shadow rounded mx-auto"
+        style="max-width: 1200px"
+      >
+        <h5 class="bg-dark text-white p-2 mb-4">A. General Questions</h5>
+
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Proposed Insured Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter Your Name"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="dob" class="form-label">Birth Date</label>
+              <input
+                type="date"
+                id="dob"
+                name="dob"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label d-block">Gender</label>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="male"
+                  value="Male"
+                />
+                <label class="form-check-label" for="male">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="female"
+                  value="Female"
+                />
+                <label class="form-check-label" for="female">Female</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Enter Your Address"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="mobile" class="form-label">Mobile No</label>
+              <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                class="form-control"
+                placeholder="Enter Your Number"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="Enter Your Email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="aadhar" class="form-label">Aadhar ID Number</label>
+            <input
+              type="number"
+              id="aadhar"
+              name="aadhar"
+              class="form-control"
+              placeholder="Enter Your Aadhar Number"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label d-flex">Status</label>
+            <div class="d-flex flex-wrap gap-3">
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="single"
+                  name="status"
+                  value="Single"
+                />
+                <label class="form-check-label" for="single">Single</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="married"
+                  name="status"
+                  value="Married"
+                />
+                <label class="form-check-label" for="married">Married</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="divorced"
+                  name="status"
+                  value="Divorced"
+                />
+                <label class="form-check-label" for="divorced">Divorced</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="others"
+                  name="status"
+                  value="Others"
+                />
+                <label class="form-check-label" for="others">Others</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="mb-3 col-md-6">
+              <label for="occupation" class="form-label">Occupation</label>
+              <input
+                type="text"
+                id="occupation"
+                name="occupation"
+                class="form-control"
+                placeholder="Enter Your Occupation"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label d-block">Are You Retiree?</label>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="retiree"
+                  id="yes-retiree"
+                  value="Yes"
+                />
+                <label class="form-check-label" for="yes-retiree">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="retiree"
+                  id="no-retiree"
+                  value="No"
+                />
+                <label class="form-check-label" for="no-retiree">No</label>
+              </div>
+            </div>
+          </div>
+
+          <h5 class="bg-dark text-white p-2 mb-4">
+            B. Type of Health Coverage
+          </h5>
+
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center">
+              <thead class="table-secondary">
+                <tr>
+                  <th>Category</th>
+                  <th>Yes</th>
+                  <th>No</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Employee</td>
+                  <td><input type="radio" name="employee" /></td>
+                  <td><input type="radio" name="employee" /></td>
+                </tr>
+                <tr>
+                  <td>Spouse</td>
+                  <td><input type="radio" name="spouse" /></td>
+                  <td><input type="radio" name="spouse" /></td>
+                </tr>
+                <tr>
+                  <td>Children</td>
+                  <td><input type="radio" name="children" /></td>
+                  <td><input type="radio" name="children" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h6 class="my-4">
+            Complete If Spouse/Children Are Proposed for Insurance
+          </h6>
+
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center">
+              <thead class="table-secondary">
+                <tr>
+                  <th>Name</th>
+                  <th>Relationship</th>
+                  <th>Birth Date</th>
+                  <th>Age</th>
+                  <th>Sex</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="text" class="form-control" /></td>
+                  <td><input type="text" class="form-control" /></td>
+                  <td><input type="date" class="form-control" /></td>
+                  <td><input type="number" class="form-control" /></td>
+                  <td>
+                    <select class="form-select">
+                      <option selected disabled>Select</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control" /></td>
+                  <td><input type="text" class="form-control" /></td>
+                  <td><input type="date" class="form-control" /></td>
+                  <td><input type="number" class="form-control" /></td>
+                  <td>
+                    <select class="form-select">
+                      <option selected disabled>Select</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control" /></td>
+                  <td><input type="text" class="form-control" /></td>
+                  <td><input type="date" class="form-control" /></td>
+                  <td><input type="number" class="form-control" /></td>
+                  <td>
+                    <select class="form-select">
+                      <option selected disabled>Select</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control" /></td>
+                  <td><input type="text" class="form-control" /></td>
+                  <td><input type="date" class="form-control" /></td>
+                  <td><input type="number" class="form-control" /></td>
+                  <td>
+                    <select class="form-select">
+                      <option selected disabled>Select</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control" /></td>
+                  <td><input type="text" class="form-control" /></td>
+                  <td><input type="date" class="form-control" /></td>
+                  <td><input type="number" class="form-control" /></td>
+                  <td>
+                    <select class="form-select">
+                      <option selected disabled>Select</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h5 class="bg-dark text-white p-2 mb-4">C. The Policy</h5>
+
+          <div class="mb-3">
+            <label for="annual" class="form-label">Annual Premium</label>
+            <input
+              type="text"
+              id="annual"
+              class="form-control"
+              placeholder="Enter In Text"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label d-flex">Payment Mode</label>
+            <div class="d-flex flex-wrap mx-3 gap-5">
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="annual-mode"
+                  name="paymentMode"
+                  value="Annual"
+                />
+                <label class="form-check-label" for="annual-mode">Annual</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="semi-annual"
+                  name="paymentMode"
+                  value="Semi-Annual"
+                />
+                <label class="form-check-label" for="semi-annual"
+                  >Semi-Annual</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="monthly"
+                  name="paymentMode"
+                  value="Monthly"
+                />
+                <label class="form-check-label" for="monthly">Monthly</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="cashAmount" class="form-label"
+              >Cash With Application</label
+            >
+            <input
+              type="number"
+              id="cashAmount"
+              name="cashAmount"
+              class="form-control"
+              placeholder="Enter Amount"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="plannedPremium" class="form-label"
+              >Planned Annual Premium</label
+            >
+            <input
+              type="number"
+              id="plannedPremium"
+              name="plannedPremium"
+              class="form-control"
+              placeholder="Enter Amount"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#termsModal"
+            >
+              Read Terms and Conditions
+            </button>
+          </div>
+
+          <div class="modal fade" id="termsModal">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="termsModalLabel">
+                    Terms and Conditions
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Improvement should be measured regularly in order to
+                    identify what is beneficial and what is not. This will help
+                    you set new targets.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-check mt-3">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="agreeTerms"
+              required
+            />
+            <label class="form-check-label" for="agreeTerms">
+              I have read and agree to the above Terms and Conditions
+            </label>
+          </div>
+
+          <div class="my-3 row">
+            <div class="col-md-6">
+              <label for="signature" class="form-label">Signature</label>
+              <input
+                type="text"
+                id="signature"
+                class="form-control"
+                placeholder="Signature"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="signDate" class="form-label">Date</label>
+              <input type="date" id="signDate" class="form-control" required />
+            </div>
+          </div>
+
+          <div
+            class="alert alert-success alert-dismissible fade d-none w-50 mx-auto"
+            role="alert"
+          >
+            Form submitted successfully!
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+            ></button>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
